@@ -1,0 +1,72 @@
+﻿生成启动时间为 2016/4/2 18:41:11。
+     1>项目“E:\RayTrace\RayTracer_Qt5\RayTracer\RayTracer.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\VS2015\VC\bin\x86_amd64\CL.exe /c /I. /IWorld /IUtilities /IBRDFs /IBTDFs /ICameras /ILights /IMaterials /IGeometricObjects /IGeometricObjects\Primitives /IGeometricObjects\Triangle /IGeometricObjects\CompoundObjects /ITracers /IGeneratedFiles /I..\..\..\Qt5.6\5.6\msvc2015_64\include /I..\..\..\Qt5.6\5.6\msvc2015_64\include\QtWidgets /I..\..\..\Qt5.6\5.6\msvc2015_64\include\QtGui /I..\..\..\Qt5.6\5.6\msvc2015_64\include\QtANGLE /I..\..\..\Qt5.6\5.6\msvc2015_64\include\QtCore /Idebug /I. /I"..\..\..\Qt5.6\5.6\msvc2015_64\mkspecs\win32-msvc2015" /Zi /nologo /W3 /WX- /Od /D _WINDOWS /D UNICODE /D WIN32 /D WIN64 /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /wd4577 /errorReport:prompt -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 World\World.cpp
+         World.cpp
+     1>World\World.cpp(143): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>World\World.cpp(167): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>World\World.cpp(178): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+     1>World\World.cpp(196): warning C4305: “参数”: 从“double”到“float”截断
+     1>World\World.cpp(231): warning C4305: “参数”: 从“double”到“const float”截断
+     1>World\World.cpp(232): warning C4305: “参数”: 从“double”到“const float”截断
+     1>World\World.cpp(260): warning C4305: “参数”: 从“double”到“const float”截断
+       Link:
+         D:\VS2015\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\RayTracer.exe" /NOLOGO /LIBPATH:E:\Qt5.6\5.6\msvc2015_64\lib /LIBPATH:C:\utils\postgresql\pgsql\lib /LIBPATH:C:\utils\my_sql\my_sql\lib /LIBPATH:E:\Qt5.6\5.6\msvc2015_64\lib E:\Qt5.6\5.6\msvc2015_64\lib\qtmaind.lib shell32.lib E:\Qt5.6\5.6\msvc2015_64\lib\Qt5Widgetsd.lib E:\Qt5.6\5.6\msvc2015_64\lib\Qt5Guid.lib E:\Qt5.6\5.6\msvc2015_64\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"debug\RayTracer.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" x64\Debug\BRDF.obj
+         x64\Debug\FresnelReflector.obj
+         x64\Debug\GlossySpecular.obj
+         x64\Debug\Lambertian.obj
+         x64\Debug\PerfectSpecular.obj
+         x64\Debug\BTDF.obj
+         x64\Debug\FresnelTransmitter.obj
+         x64\Debug\PerfectTransmitter.obj
+         x64\Debug\Camera.obj
+         x64\Debug\Pinhole.obj
+         x64\Debug\moc_mainwindow.obj
+         x64\Debug\BBox.obj
+         x64\Debug\Compound.obj
+         x64\Debug\Grid.obj
+         x64\Debug\GeometricObject.obj
+         x64\Debug\Instance.obj
+         x64\Debug\Plane.obj
+         x64\Debug\Rectangle.obj
+         x64\Debug\Sphere.obj
+         x64\Debug\FlatMeshTriangle.obj
+         x64\Debug\MeshTriangle.obj
+         x64\Debug\SmoothMeshTriangle.obj
+         x64\Debug\SmoothTriangle.obj
+         x64\Debug\Triangle.obj
+         x64\Debug\Ambient.obj
+         x64\Debug\AreaLight.obj
+         x64\Debug\Directional.obj
+         x64\Debug\Light.obj
+         x64\Debug\PointLight.obj
+         x64\Debug\main.obj
+         x64\Debug\mainwindow.obj
+         x64\Debug\Dielectric.obj
+         x64\Debug\Material.obj
+         x64\Debug\Matte.obj
+         x64\Debug\Phong.obj
+         x64\Debug\Reflective.obj
+         x64\Debug\Transparent.obj
+         x64\Debug\RayCast.obj
+         x64\Debug\SingleShpere.obj
+         x64\Debug\Tracer.obj
+         x64\Debug\Whitted.obj
+         x64\Debug\Matrix.obj
+         x64\Debug\Mesh.obj
+         x64\Debug\Normal.obj
+         x64\Debug\ply.obj
+         x64\Debug\Point2D.obj
+         x64\Debug\Point3D.obj
+         x64\Debug\Ray.obj
+         x64\Debug\RGBColor.obj
+         x64\Debug\ShadeRec.obj
+         x64\Debug\Vector3D.obj
+         x64\Debug\ViewPlane.obj
+         x64\Debug\World.obj
+         RayTracer.vcxproj -> E:\RayTrace\RayTracer_Qt5\RayTracer\debug\RayTracer.exe
+     1>已完成生成项目“E:\RayTrace\RayTracer_Qt5\RayTracer\RayTracer.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:02.24

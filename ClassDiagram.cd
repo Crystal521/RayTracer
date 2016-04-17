@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Ui_MainWindow" Collapsed="true">
+    <Position X="19" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAQAAAAAAAAIAAAAQAIAAAgAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_mainwindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainWindow" Collapsed="true">
+    <Position X="42" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAIAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mainwindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ViewPlane" Collapsed="true">
+    <Position X="45.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBEIAAAAAIAAAAAAEgABAJAAAAAgAAAgACAgCgAAAgg=</HashCode>
+      <FileName>World\ViewPlane.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="World" Collapsed="true">
+    <Position X="40.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgIAhEABAAAAAECAEAAhQICkAgAACQAEgEAAAA=</HashCode>
+      <FileName>World\World.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RayCast" Collapsed="true">
+    <Position X="31.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAI=</HashCode>
+      <FileName>Tracers\RayCast.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SingleSphere" Collapsed="true">
+    <Position X="33.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Tracers\SingleSphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tracer" Collapsed="true">
+    <Position X="31.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAwAQAA=</HashCode>
+      <FileName>Tracers\Tracer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Whitted" Collapsed="true">
+    <Position X="29.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAACAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Tracers\Whitted.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BRDF" Collapsed="true">
+    <Position X="22.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAABBAAAAAAAAgEQAAABA=</HashCode>
+      <FileName>BRDFs\BRDF.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FresnelReflector" Collapsed="true">
+    <Position X="19.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAgAAAAAAAAABBAAAAQAgAgEQAAABI=</HashCode>
+      <FileName>BRDFs\FresnelReflector.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GlossySpecular" Collapsed="true">
+    <Position X="21.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAABAIEJBAAAAAEBAgEQAAAhA=</HashCode>
+      <FileName>BRDFs\GlossySpecular.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Lambertian" Collapsed="true">
+    <Position X="23.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgIAAAAAAAAAAAAQAAAACAAAgEQAICBA=</HashCode>
+      <FileName>BRDFs\Lambertian.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PerfectSpecular" Collapsed="true">
+    <Position X="26" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIACAgAAAAAQAAAAAAAAAAAJCAAAAAAAgEQAAABA=</HashCode>
+      <FileName>BRDFs\PerfectSpecular.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTDF" Collapsed="true">
+    <Position X="30.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAABBAAAAAAAAgEQAAABA=</HashCode>
+      <FileName>BTDFs\BTDF.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FresnelTransmitter" Collapsed="true">
+    <Position X="31.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAgACAAAAAAAhBAAAAQAgAgEQAAABI=</HashCode>
+      <FileName>BTDFs\FresnelTransmitter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PerfectTransmitter" Collapsed="true">
+    <Position X="29" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAACAAQAAAAABAAAAgAAEgEQAAQJA=</HashCode>
+      <FileName>BTDFs\PerfectTransmitter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dielectric" Collapsed="true">
+    <Position X="21.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABAAAACAABAAAAAAAAAAIAAABAAAgCAAgAAAAAAABQ=</HashCode>
+      <FileName>Materials\Dielectric.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Material" Collapsed="true">
+    <Position X="22.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAgAAAAABA=</HashCode>
+      <FileName>Materials\Material.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Matte" Collapsed="true">
+    <Position X="19.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAACAAAAAAgICAAAAAQAAAAAAAAEAAAAAgAAAAABA=</HashCode>
+      <FileName>Materials\Matte.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Phong" Collapsed="true">
+    <Position X="23.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACIAAAAEAAAgIAIAAAAQAAIABAAAEAAAAAgAAAAABA=</HashCode>
+      <FileName>Materials\Phong.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Reflective" Collapsed="true">
+    <Position X="23.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAACAgABAAAAAAAAAAEAAAAAABAAAAAAgAAAAABA=</HashCode>
+      <FileName>Materials\Reflective.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Transparent" Collapsed="true">
+    <Position X="26" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAgEBAgAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAQJA=</HashCode>
+      <FileName>Materials\Transparent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ambient" Collapsed="true">
+    <Position X="31.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAIEAAiAAAAAAAAAAAAAACAAAogAEQAABA=</HashCode>
+      <FileName>Lights\Ambient.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Directional" Collapsed="true">
+    <Position X="27.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAAAAAACAIAAAiAAAAAAAAAAAAAACAAIqgAAQAABA=</HashCode>
+      <FileName>Lights\Directional.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Light" Collapsed="true">
+    <Position X="29.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAYAACiAAAAAgAAAAAAAAAAAAAgAAQAABA=</HashCode>
+      <FileName>Lights\Light.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PointLight" Collapsed="true">
+    <Position X="29.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAACAAAAIABAiAAAAAAAiAAAAAgCgAAogIQQAABA=</HashCode>
+      <FileName>Lights\PointLight.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BBox" Collapsed="true">
+    <Position X="40.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAIAAAIAAAAAAABgAQCgAQAhAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\BBox.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeometricObject" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAUAAAAAQAAAAAAIAAAIgAAIAgAEEAAAgAAAAIBA=</HashCode>
+      <FileName>GeometricObjects\GeometricObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Instance" Collapsed="true">
+    <Position X="31" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEWEAgAAAJAAgAAgICBAAgAAAAgAAEwAAkAAQAABA=</HashCode>
+      <FileName>GeometricObjects\Instance.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlatMeshTriangle">
+    <Position X="37.75" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAIAAAAAAAAAgAAAgAAgAAAAABA=</HashCode>
+      <FileName>GeometricObjects\Triangle\FlatMeshTriangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshTriangle">
+    <Position X="36.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAIABIwgAAIAggAAAAAgAAABABE=</HashCode>
+      <FileName>GeometricObjects\Triangle\MeshTriangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmoothMeshTriangle">
+    <Position X="35.5" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAIAAABAAAAAgAAAAAAgQAAAABA=</HashCode>
+      <FileName>GeometricObjects\Triangle\SmoothMeshTriangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmoothTriangle" Collapsed="true">
+    <Position X="22" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAIAAAAgEBQEwAAAAAIiQAAAABA=</HashCode>
+      <FileName>GeometricObjects\Triangle\SmoothTriangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Triangle" Collapsed="true">
+    <Position X="24.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAABAAIAAIggABQAgAAAAAIgAAAAABA=</HashCode>
+      <FileName>GeometricObjects\Triangle\Triangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Plane" Collapsed="true">
+    <Position X="26.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAgIgAAgAAAAAgAAAAAIgAAAAABA=</HashCode>
+      <FileName>GeometricObjects\Primitives\Plane.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rectangle" Collapsed="true">
+    <Position X="28.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAABAAAAAAABAAAAAIgAAAAAAIggAAgEUAgAAAAABA=</HashCode>
+      <FileName>GeometricObjects\Primitives\Rectangle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sphere" Collapsed="true">
+    <Position X="33.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAACAAAAAAAAAYgAAIAAAAAhAAAAAAgAACIABA=</HashCode>
+      <FileName>GeometricObjects\Primitives\Sphere.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Compound" Collapsed="true">
+    <Position X="19.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACgAAAAAAAIAAEAABQAAgAAEAAAgAIAAABA=</HashCode>
+      <FileName>GeometricObjects\CompoundObjects\Compound.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Grid" Collapsed="true">
+    <Position X="19.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAEAAAAAABAIABAAjgEBABgGAYAAgAIAAAxA=</HashCode>
+      <FileName>GeometricObjects\CompoundObjects\Grid.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Matrix" Collapsed="true">
+    <Position X="43.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAQAAAAAAAAAAAAAAAgAAAAAgAgAAAAAAA=</HashCode>
+      <FileName>Utilities\Matrix.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mesh" Collapsed="true">
+    <Position X="45.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAQAAAAAEAABAAAAIAAAAAAAAQAIAAARIgAAAAAAA=</HashCode>
+      <FileName>Utilities\Mesh.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Normal" Collapsed="true">
+    <Position X="40.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAQAAAAAAAAAQAAAAAIAAAAAABgAQAAAAA=</HashCode>
+      <FileName>Utilities\Normal.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Point2D" Collapsed="true">
+    <Position X="42" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAIAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAA=</HashCode>
+      <FileName>Utilities\Point2D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Point3D" Collapsed="true">
+    <Position X="43.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQABAIAAAAAAAAAAAAAAAAAEAAAAAAAABgAQAAAAA=</HashCode>
+      <FileName>Utilities\Point3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ray" Collapsed="true">
+    <Position X="45.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAECAAgAAAAAAA=</HashCode>
+      <FileName>Utilities\Ray.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RGBColor" Collapsed="true">
+    <Position X="40.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAARAAAAAAAAAIAQUhAAAgAAA=</HashCode>
+      <FileName>Utilities\RGBColor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShadeRec" Collapsed="true">
+    <Position X="42" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAQAAQAAgAAAAgAAAAAAAKIAAwAJAAAAAA=</HashCode>
+      <FileName>Utilities\ShadeRec.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vector3D" Collapsed="true">
+    <Position X="43.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAQCAQAAEAQAQAAAAAAAAAAAABgAQAAAAA=</HashCode>
+      <FileName>Utilities\Vector3D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camera" Collapsed="true">
+    <Position X="22" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQLAghIAAAAAAAAQAAQAAAAgAAAAAAAAFogAgAAQBA=</HashCode>
+      <FileName>Cameras\Camera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pinhole" Collapsed="true">
+    <Position X="22" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAgQAAIIAAAAAAAAABCAAAAAAAAEAAAgAAAAABA=</HashCode>
+      <FileName>Cameras\Pinhole.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ui::MainWindow" Collapsed="true">
+    <Position X="19" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\ui_mainwindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="qt_meta_stringdata_MainWindow_t" Collapsed="true">
+    <Position X="42" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>GeneratedFiles\Debug\moc_mainwindow.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RuleName" Collapsed="true">
+    <Position X="43.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\ply.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PlyProperty" Collapsed="true">
+    <Position X="43.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAIAAAACAAAACAAAAAAAAEAAAAAAAAiACAAAA=</HashCode>
+      <FileName>Utilities\ply.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PlyElement" Collapsed="true">
+    <Position X="43.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACQAACAAAAAAAIAAAAAACACEACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\ply.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PlyOtherProp" Collapsed="true">
+    <Position X="42" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAIAAAAAAAACEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\ply.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="OtherData" Collapsed="true">
+    <Position X="40.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\ply.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="OtherElem" Collapsed="true">
+    <Position X="42" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAgAAAgAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Utilities\ply.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PlyOtherElems" Collapsed="true">
+    <Position X="40.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\ply.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PlyPropRules" Collapsed="true">
+    <Position X="45.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAABAAAgAAAACAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\ply.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PlyRuleList" Collapsed="true">
+    <Position X="40.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAEAAAAAAAAAAIAAAE=</HashCode>
+      <FileName>Utilities\ply.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="PlyFile" Collapsed="true">
+    <Position X="45.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIoACAAAAAAAAQAEAAAAgAAAgQAQQAAABAAAEAAAAA=</HashCode>
+      <FileName>Utilities\ply.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="TriangleType" Collapsed="true">
+    <Position X="26" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\CompoundObjects\Grid.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="__unnamed_enum_027b_1" Collapsed="true">
+    <Position X="26" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GeometricObjects\CompoundObjects\Grid.cpp</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
