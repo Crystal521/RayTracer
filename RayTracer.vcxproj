@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7F94F33A-DB9C-3150-AAE9-D7D9B1B55ADD}</ProjectGuid>
+    <RootNamespace>RayTracer</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>RayTracer</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>RayTracer</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RayTracer</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RayTracer</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;World;Utilities;BRDFs;BTDFs;Cameras;Lights;Materials;GeometricObjects;GeometricObjects\Primitives;GeometricObjects\Triangle;GeometricObjects\CompoundObjects;Tracers;GeneratedFiles;..\..\..\Qt5.6\5.6\msvc2015_64\include;..\..\..\Qt5.6\5.6\msvc2015_64\include\QtWidgets;..\..\..\Qt5.6\5.6\msvc2015_64\include\QtGui;..\..\..\Qt5.6\5.6\msvc2015_64\include\QtANGLE;..\..\..\Qt5.6\5.6\msvc2015_64\include\QtCore;release;.;..\..\..\Qt5.6\5.6\msvc2015_64\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmain.lib;shell32.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\utils\postgresql\pgsql\lib;C:\utils\my_sql\my_sql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\RayTracer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;World;Utilities;BRDFs;BTDFs;Cameras;Lights;Materials;GeometricObjects;GeometricObjects\Primitives;GeometricObjects\Triangle;GeometricObjects\CompoundObjects;Tracers;GeneratedFiles;..\..\..\Qt5.6\5.6\msvc2015_64\include;..\..\..\Qt5.6\5.6\msvc2015_64\include\QtWidgets;..\..\..\Qt5.6\5.6\msvc2015_64\include\QtGui;..\..\..\Qt5.6\5.6\msvc2015_64\include\QtANGLE;..\..\..\Qt5.6\5.6\msvc2015_64\include\QtCore;debug;.;..\..\..\Qt5.6\5.6\msvc2015_64\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmaind.lib;shell32.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\utils\postgresql\pgsql\lib;C:\utils\my_sql\my_sql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\RayTracer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BRDFs\BRDF.h" />
+    <ClInclude Include="BRDFs\FresnelReflector.h" />
+    <ClInclude Include="BRDFs\GlossySpecular.h" />
+    <ClInclude Include="BRDFs\Lambertian.h" />
+    <ClInclude Include="BRDFs\PerfectSpecular.h" />
+    <ClInclude Include="BTDFs\BTDF.h" />
+    <ClInclude Include="BTDFs\FresnelTransmitter.h" />
+    <ClInclude Include="BTDFs\PerfectTransmitter.h" />
+    <ClInclude Include="Cameras\Camera.h" />
+    <ClInclude Include="Cameras\Pinhole.h" />
+    <ClInclude Include="GeneratedFiles\ui_mainwindow.h" />
+    <ClInclude Include="GeometricObjects\BBox.h" />
+    <ClInclude Include="GeometricObjects\CompoundObjects\Compound.h" />
+    <ClInclude Include="GeometricObjects\CompoundObjects\Grid.h" />
+    <ClInclude Include="GeometricObjects\GeometricObject.h" />
+    <ClInclude Include="GeometricObjects\Instance.h" />
+    <ClInclude Include="GeometricObjects\Primitives\Plane.h" />
+    <ClInclude Include="GeometricObjects\Primitives\Rectangle.h" />
+    <ClInclude Include="GeometricObjects\Primitives\Sphere.h" />
+    <ClInclude Include="GeometricObjects\Triangle\FlatMeshTriangle.h" />
+    <ClInclude Include="GeometricObjects\Triangle\MeshTriangle.h" />
+    <ClInclude Include="GeometricObjects\Triangle\SmoothMeshTriangle.h" />
+    <ClInclude Include="GeometricObjects\Triangle\SmoothTriangle.h" />
+    <ClInclude Include="GeometricObjects\Triangle\Triangle.h" />
+    <ClInclude Include="Lights\Ambient.h" />
+    <ClInclude Include="Lights\AreaLight.h" />
+    <ClInclude Include="Lights\Directional.h" />
+    <ClInclude Include="Lights\Light.h" />
+    <ClInclude Include="Lights\PointLight.h" />
+    <CustomBuild Include="mainwindow.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing mainwindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-I.\World" "-I.\Utilities" "-I.\BRDFs" "-I.\BTDFs" "-I.\Cameras" "-I.\Lights" "-I.\Materials" "-I.\GeometricObjects" "-I.\GeometricObjects\Primitives" "-I.\GeometricObjects\Triangle" "-I.\GeometricObjects\CompoundObjects" "-I.\Tracers" "-I.\GeneratedFiles" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\include" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\include\QtWidgets" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\include\QtGui" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\include\QtANGLE" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\include\QtCore" "-I.\debug" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing mainwindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I.\World" "-I.\Utilities" "-I.\BRDFs" "-I.\BTDFs" "-I.\Cameras" "-I.\Lights" "-I.\Materials" "-I.\GeometricObjects" "-I.\GeometricObjects\Primitives" "-I.\GeometricObjects\Triangle" "-I.\GeometricObjects\CompoundObjects" "-I.\Tracers" "-I.\GeneratedFiles" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\include" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\include\QtWidgets" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\include\QtGui" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\include\QtANGLE" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\include\QtCore" "-I.\release" "-I.\..\..\..\Qt5.6\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
+    </CustomBuild>
+    <ClInclude Include="Materials\Dielectric.h" />
+    <ClInclude Include="Materials\Material.h" />
+    <ClInclude Include="Materials\Matte.h" />
+    <ClInclude Include="Materials\Phong.h" />
+    <ClInclude Include="Materials\Reflective.h" />
+    <ClInclude Include="Materials\Transparent.h" />
+    <ClInclude Include="Tracers\RayCast.h" />
+    <ClInclude Include="Tracers\SingleSphere.h" />
+    <ClInclude Include="Tracers\Tracer.h" />
+    <ClInclude Include="Tracers\Whitted.h" />
+    <ClInclude Include="Utilities\Constants.h" />
+    <ClInclude Include="Utilities\Maths.h" />
+    <ClInclude Include="Utilities\Matrix.h" />
+    <ClInclude Include="Utilities\Mesh.h" />
+    <ClInclude Include="Utilities\Normal.h" />
+    <ClInclude Include="Utilities\ply.h" />
+    <ClInclude Include="Utilities\Point2D.h" />
+    <ClInclude Include="Utilities\Point3D.h" />
+    <ClInclude Include="Utilities\Ray.h" />
+    <ClInclude Include="Utilities\RGBColor.h" />
+    <ClInclude Include="Utilities\ShadeRec.h" />
+    <ClInclude Include="Utilities\Vector3D.h" />
+    <ClInclude Include="World\ViewPlane.h" />
+    <ClInclude Include="World\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BRDFs\BRDF.cpp" />
+    <ClCompile Include="BRDFs\FresnelReflector.cpp" />
+    <ClCompile Include="BRDFs\GlossySpecular.cpp" />
+    <ClCompile Include="BRDFs\Lambertian.cpp" />
+    <ClCompile Include="BRDFs\PerfectSpecular.cpp" />
+    <ClCompile Include="BTDFs\BTDF.cpp" />
+    <ClCompile Include="BTDFs\FresnelTransmitter.cpp" />
+    <ClCompile Include="BTDFs\PerfectTransmitter.cpp" />
+    <ClCompile Include="Cameras\Camera.cpp" />
+    <ClCompile Include="Cameras\Pinhole.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeometricObjects\BBox.cpp" />
+    <ClCompile Include="GeometricObjects\CompoundObjects\Compound.cpp" />
+    <ClCompile Include="GeometricObjects\CompoundObjects\Grid.cpp" />
+    <ClCompile Include="GeometricObjects\GeometricObject.cpp" />
+    <ClCompile Include="GeometricObjects\Instance.cpp" />
+    <ClCompile Include="GeometricObjects\Primitives\Plane.cpp" />
+    <ClCompile Include="GeometricObjects\Primitives\Rectangle.cpp" />
+    <ClCompile Include="GeometricObjects\Primitives\Sphere.cpp" />
+    <ClCompile Include="GeometricObjects\Triangle\FlatMeshTriangle.cpp" />
+    <ClCompile Include="GeometricObjects\Triangle\MeshTriangle.cpp" />
+    <ClCompile Include="GeometricObjects\Triangle\SmoothMeshTriangle.cpp" />
+    <ClCompile Include="GeometricObjects\Triangle\SmoothTriangle.cpp" />
+    <ClCompile Include="GeometricObjects\Triangle\Triangle.cpp" />
+    <ClCompile Include="Lights\Ambient.cpp" />
+    <ClCompile Include="Lights\AreaLight.cpp" />
+    <ClCompile Include="Lights\Directional.cpp" />
+    <ClCompile Include="Lights\Light.cpp" />
+    <ClCompile Include="Lights\PointLight.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="Materials\Dielectric.cpp" />
+    <ClCompile Include="Materials\Material.cpp" />
+    <ClCompile Include="Materials\Matte.cpp" />
+    <ClCompile Include="Materials\Phong.cpp" />
+    <ClCompile Include="Materials\Reflective.cpp" />
+    <ClCompile Include="Materials\Transparent.cpp" />
+    <ClCompile Include="Tracers\RayCast.cpp" />
+    <ClCompile Include="Tracers\SingleShpere.cpp" />
+    <ClCompile Include="Tracers\Tracer.cpp" />
+    <ClCompile Include="Tracers\Whitted.cpp" />
+    <ClCompile Include="Utilities\Matrix.cpp" />
+    <ClCompile Include="Utilities\Mesh.cpp" />
+    <ClCompile Include="Utilities\Normal.cpp" />
+    <ClCompile Include="Utilities\ply.cpp" />
+    <ClCompile Include="Utilities\Point2D.cpp" />
+    <ClCompile Include="Utilities\Point3D.cpp" />
+    <ClCompile Include="Utilities\Ray.cpp" />
+    <ClCompile Include="Utilities\RGBColor.cpp" />
+    <ClCompile Include="Utilities\ShadeRec.cpp" />
+    <ClCompile Include="Utilities\Vector3D.cpp" />
+    <ClCompile Include="World\ViewPlane.cpp" />
+    <ClCompile Include="World\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" Qt5Version_x0020_x64="msvc2015_64" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
