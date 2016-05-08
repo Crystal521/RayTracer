@@ -110,8 +110,7 @@ RGBColor World::ClampToColor(const RGBColor& raw_color) const
 	return (c);
 }
 
-void
-World::DisplayPixel(const int row, const int column, const RGBColor& raw_color) const
+void World::DisplayPixel(const int row, const int column, const RGBColor& raw_color) const
 {
 	RGBColor color;
 
@@ -223,9 +222,6 @@ void World::Build() {
 	//pDielectric->SetCfIn(0.65, 0.65, 0.1);   // lemon
 	//pDielectric->SetCfOut(white);
 
-
-
-		
 	//Ground
 	Matte* pMatte = new Matte;
 	pMatte->SetKa(0.55);

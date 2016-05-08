@@ -47,8 +47,7 @@ inline void Grid::ReverseMeshNormals()
 }
 
 
-inline void
-Grid::StoreMaterial(Material* material_ptr, const int index) 
+inline void Grid::StoreMaterial(Material* material_ptr, const int index) 
 {
 	objects[index]->SetMaterial(material_ptr);
 }
