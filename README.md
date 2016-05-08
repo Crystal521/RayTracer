@@ -16,12 +16,15 @@
 
 
 >World与其他类的关系（此处缺少GeometricObject类和Light类依赖关系）
+>
 >>![image](https://github.com/zymix/RayTracer/blob/master/ClassDiagram/World.png)
 
 
 >Material与其他类的关系
+>
 >>![image](https://github.com/zymix/RayTracer/blob/master/ClassDiagram/Material.png)
 
 
 >GeometricObject类
+>
 >>![image](https://github.com/zymix/RayTracer/blob/master/ClassDiagram/GeometricObjects.png)
